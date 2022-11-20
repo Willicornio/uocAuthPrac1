@@ -1,0 +1,7 @@
+
+{
+    "/api": {
+      "target": "https://api.linkedin.com/v2",
+      "secure": false
+    }
+  }
