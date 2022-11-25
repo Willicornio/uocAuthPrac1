@@ -8,26 +8,25 @@
     <button (click)="geta()">Get token</button>
     <button (click)="getInfoUser()">Get Info user</button>
 
-    <button (click)="refreshToken()">Refresh token</button>
+    <button (click)="errorToken()">Con token incorrecto error</button>
     <button (click)="postComment()">Post comment</button>
 
     
     
 </div>
 <div>
-    <p>Token: {{token}}</p>
+    <p>Token: {{token.access_token}}</p>
     <br>
-    <p>TokenExporatinDate: {{tokenExpiration}}</p>
+    <p>TokenExporatinDate: {{token.expires_in}}</p>
     <br>
-    <p>newToken: {{newToken}}</p>
-    <br>
-    <p>newTokenExpiration: {{newTokenExpiration}}</p>
+    <p>Con token incorrecto error: {{newToken}}</p>
     <br>
     <h1>Info user:</h1>
     <br>
-    <p>name: {{name}}</p>
+    <p>name: {{user.localizedFirstName}}</p>
     <br>
-    <p>lastname: {{lastname}}</p>
+    <p>lastname: {{user.localizedLastName}}</p>
     <br>
     <p>foto: {{foto}}</p>
 </div>
+
